@@ -13,15 +13,40 @@
 </head>
 
 <body>
-  <div id="fullscreen">
 
-    <button id="fullscreen-button">Enter Fullscreen</button>
-  </div>
+  <!-- Added a fullscreen javascript button -->
+
+
+
+
+
   <header>
     <section class="cat">
+      <div id="fullscreen">
+        <button class="button" id="fullscreen-button">Tyler Fink</button>
+      </div>
 
+        <script>
+          var fullscreenButton = document.getElementById("fullscreen-button");
+          var fullscreenDiv = document.getElementById("fullscreen");
+          var fullscreenFunc = fullscreenDiv.requestFullscreen;
 
-      <p class="ty">Tyler Fink</p>
+          if (!fullscreenFunc) {
+            ['mozRequestFullScreen',
+              'msRequestFullscreen',
+              'webkitRequestFullScreen'
+            ].forEach(function(req) {
+              fullscreenFunc = fullscreenFunc || fullscreenDiv[req];
+            });
+          }
+
+          function enterFullscreen() {
+            fullscreenFunc.call(fullscreenDiv);
+          }
+
+          fullscreenButton.addEventListener('click', enterFullscreen);
+        </script>
+      <p class="ty"></p>
       <p class="think">"Think big and dont listen to people who tell you it can't be done. Life's too short to think small."</p>
 
     </section>
@@ -136,26 +161,6 @@
     <a class="hob" href="#">Video Games</a>
     <a class="hob" href="#">Apeciation of Art</a>
   </section>
-  <script>
-    var fullscreenButton = document.getElementById("fullscreen-button");
-    var fullscreenDiv = document.getElementById("fullscreen");
-    var fullscreenFunc = fullscreenDiv.requestFullscreen;
-
-    if (!fullscreenFunc) {
-      ['mozRequestFullScreen',
-        'msRequestFullscreen',
-        'webkitRequestFullScreen'
-      ].forEach(function(req) {
-        fullscreenFunc = fullscreenFunc || fullscreenDiv[req];
-      });
-    }
-
-    function enterFullscreen() {
-      fullscreenFunc.call(fullscreenDiv);
-    }
-
-    fullscreenButton.addEventListener('click', enterFullscreen);
-  </script>
 
 
 

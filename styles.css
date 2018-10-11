@@ -48,6 +48,7 @@ a.hob {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-radius: 10px;
 }
 
 a:hover, a:focus {
@@ -68,7 +69,8 @@ section.cat {
   background-size: cover;
   position: relative;
   top: 0px;
-  margin-top: 55px;
+  margin-top: 36px;
+  border-radius: 80px;
 }
 
 section p+p {
@@ -138,6 +140,7 @@ nav ul, nav li {
   z-index: 1000;
   box-shadow: 7px 7px 18px .05px black;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .main-menu li {
@@ -272,21 +275,30 @@ footer {
   }
 }
 
-#fullscreen:-moz-full-screen {
-  padding: 42px;
-  background-color: pink;
-  border: 2px solid #f00;
-  font-size: 200%;
-}
-
 #fullscreen:-webkit-full-screen {
   padding: 42px;
   background-color: pink;
-  border: 2px solid #f00;
+  border: 5px solid #f00;
   font-size: 200%;
 }
 
+button#fullscreen-button {
+  position: relative;
+  top: -35px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 2px 2px 9px black;
+  border-radius: 50%;
+  opacity: .9;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 
+}
 
 div {
   text-align: center;
