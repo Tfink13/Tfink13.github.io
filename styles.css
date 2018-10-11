@@ -1,27 +1,39 @@
 /* Add your CSS here */
+html {
+  background: darkcyan;
+}
+
 * {
   box-sizing: border-box;
 }
 
+body {
+  margin: auto;
+}
+
+h1.fav {
+  color: black;
+}
+
+/* My styled p elements */
 p {
   font-weight: 900;
 }
 
 p.ty {
-
   text-align: center;
   position: relative;
   top: -35px;
   margin-bottom: -21px;
   font-size: 30px;
   font-family: Apple Chancery, cursive;
-
 }
 
 p.think {
   text-shadow: 4px 4px blueviolet;
 }
 
+/* styled anchors */
 a {
   text-decoration: none;
 }
@@ -30,21 +42,17 @@ a.git {
   box-shadow: inset 0 -0.07em 0 var(--articlePrimaryColor, #76bf80);
 }
 
-a:-webkit-any-link {
-  color: -webkit-link;
-  cursor: pointer;
-  text-decoration: underline;
-}
 a.hob {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-html {
-  background: darkcyan;
+a:hover, a:focus {
+  text-decoration: none;
 }
 
+/* styled sections */
 section img {
   position: absolute;
   float: left;
@@ -59,20 +67,6 @@ section.cat {
   position: relative;
   top: 0px;
   margin-top: 55px;
-}
-
-a:hover, a:focus {
-  text-decoration: none;
-}
-
-nav ul, nav li {
-  outline: 0;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: auto;
 }
 
 section p+p {
@@ -94,44 +88,28 @@ section.bio {
   text-align: center;
 }
 
-i.fa.fa-2x.fa-map-marker.pos {
-  padding-left: 13px;
-}
-
-i.fa.fa-info.fa-2x.pos {
-  padding-left: 17px;
-}
-
-h1.fav {
-  color: black;
-}
 section.hobbies a {
   display: inline;
   margin: 85px;
   color: green;
-
-
-
 }
+
 section.hobbies {
   text-align: center;
   margin-top: 85px;
   margin-bottom: 85px;
 }
 
+/* Nav */
+nav ul, nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .main-menu li:hover>a {
   color: white;
   box-shadow: 1px 1px 20px 0px black;
-}
-
-.fa {
-  position: relative;
-  display: table-cell;
-  width: 60px;
-  height: 34px;
-  padding: 9px;
-  color: ivory;
-  right: 3px;
 }
 
 .main-menu:hover, nav.main-menu.expanded {
@@ -183,7 +161,6 @@ section.hobbies {
   vertical-align: middle;
   width: 190px;
   left: 50px;
-
 }
 
 .main-menu>ul.logout {
@@ -192,28 +169,45 @@ section.hobbies {
   bottom: 0;
 }
 
+.fa {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 34px;
+  padding: 9px;
+  color: ivory;
+  right: 3px;
+}
+
+/* styled icons for nav */
+i.fa.fa-2x.fa-map-marker.pos {
+  padding-left: 13px;
+}
+
+i.fa.fa-info.fa-2x.pos {
+  padding-left: 17px;
+}
+
+/* style to change the color of highlighter */
 ::selection {
   background-color: darkorchid;
 }
 
-
+/* attempt at making an animation of floating, spinning squares */
 .bubbles {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%
-  z-index: 1;
+  height: 100% z-index: 1;
   transform: translateZ(0);
-
-
 }
+
 .bubbles li {
   position: absolute;
   display: block;
   list-style: none;
-  background-color: rgba(255, 255, 255, 0.15)
-  bottom: -100px;
+  background-color: rgba(255, 255, 255, 0.15) bottom: -100px;
   animation: square 20s infinite;
   transition-timing-function: linear;
 }
@@ -222,8 +216,8 @@ section.hobbies {
   width: 40px;
   height: 40px;
   left: 20%;
-
 }
+
 .bubbles li:nth-child(2) {
   width: 60px;
   height: 60px;
@@ -231,25 +225,29 @@ section.hobbies {
   animation-delay: 2s;
   animation-duration: 17s;
 }
+
 .bubbles li:nth-child(3) {
   width: 60px;
   height: 60px;
   left: 40%;
   animation-delay: 4s;
   animation-duration: 13s;
-}.bubbles li:nth-child(4) {
+}
+
+.bubbles li:nth-child(4) {
   width: 60px;
   height: 60px;
   left: 40%;
   animation-delay: 1s;
   animation-duration: 22s;
 }
-@@keyframes square {
-    0%{
-      -webkit-transform: translateY(0);
-    }
-    100%{
-      transform: translateY(0) rotate(630deg);
-    }
 
+@@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0) rotate(630deg);
+  }
 }
