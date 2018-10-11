@@ -23,14 +23,14 @@ p {
 p.ty {
   text-align: center;
   position: relative;
-  top: -35px;
+  top: -50px;
   margin-bottom: -21px;
   font-size: 30px;
   font-family: Apple Chancery, cursive;
 }
 
 p.think {
-  text-shadow: 4px 4px blueviolet;
+  text-shadow: 4px 4px 3.5px blueviolet;
 }
 
 /* styled anchors */
@@ -39,7 +39,9 @@ a {
 }
 
 a.git {
-  box-shadow: inset 0 -0.07em 0 var(--articlePrimaryColor, #76bf80);
+  box-shadow: inset 0 -0.07em 0 var(--articlePrimaryColor, palegreen);
+  border-bottom: 6px double;
+  line-height: 2.9em;
 }
 
 a.hob {
@@ -83,15 +85,23 @@ section p+p {
 section.bio {
   position: relative;
   font-size: 35px;
-  font-family: monospace;
+  font-family: Chalkduster, fantasy;
   margin: 35px;
   text-align: center;
 }
 
 section.hobbies a {
-  display: inline;
-  margin: 85px;
-  color: green;
+  display: inline-block;
+  margin: 40px;
+  border: 1px solid palegreen;
+  padding: 13px 25px;
+  background: blueviolet;
+  color: palegreen;
+  text-decoration: none;
+  font-family: Chalkduster, fantasy;
+  width: 35%;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 section.hobbies {
@@ -122,12 +132,12 @@ nav ul, nav li {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 55px;
+  width: 50px;
   overflow: hidden;
   transition: width .05s linear;
   z-index: 1000;
-  box-shadow: 7px 7px 18px 1px black;
-  border: 3px solid black;
+  box-shadow: 7px 7px 18px .05px black;
+  border: 1px solid black;
 }
 
 .main-menu li {
@@ -169,28 +179,38 @@ nav ul, nav li {
   bottom: 0;
 }
 
+/* styled icons for nav */
+i.fa.fa-2x.fa-map-marker.pos {
+  padding-left: 17px;
+}
+
+i.fa.fa-info.fa-2x.pos {
+  padding-left: 21px;
+}
+
+i.fas.fa-film.fa.fa-2x {
+  padding: 9px;
+}
+
 .fa {
   position: relative;
   display: table-cell;
   width: 60px;
   height: 34px;
-  padding: 9px;
+  padding: 6px;
+  padding-left: 12px;
   color: ivory;
   right: 3px;
-}
-
-/* styled icons for nav */
-i.fa.fa-2x.fa-map-marker.pos {
-  padding-left: 13px;
-}
-
-i.fa.fa-info.fa-2x.pos {
-  padding-left: 17px;
 }
 
 /* style to change the color of highlighter */
 ::selection {
   background-color: darkorchid;
+}
+
+/* style footer */
+footer {
+  font-family: Chalkduster, fantasy;
 }
 
 /* attempt at making an animation of floating, spinning squares */
@@ -250,4 +270,80 @@ i.fa.fa-info.fa-2x.pos {
   100% {
     transform: translateY(0) rotate(630deg);
   }
+}
+
+#fullscreen:fullscreen {
+  padding: 42px;
+  background-color: pink;
+  border: 2px solid #f00;
+  font-size: 200%;
+}
+
+#fullscreen:fullscreen>h1 {
+  color: red;
+}
+
+#fullscreen:fullscreen>p {
+  color: darkred;
+}
+
+#fullscreen:-moz-full-screen {
+  padding: 42px;
+  background-color: pink;
+  border: 2px solid #f00;
+  font-size: 200%;
+}
+
+#fullscreen:-webkit-full-screen {
+  padding: 42px;
+  background-color: pink;
+  border: 2px solid #f00;
+  font-size: 200%;
+}
+
+#fullscreen:-moz-full-screen>h1 {
+  color: red;
+}
+
+#fullscreen:-webkit-full-screen>h1 {
+  color: red;
+}
+
+#fullscreen:-moz-full-screen>p {
+  color: darkred;
+}
+
+#fullscreen:-webkit-full-screen>p {
+  color: darkred;
+}
+
+#fullscreen:-moz-full-screen>button {
+  display: none;
+}
+
+#fullscreen:-webkit-full-screen>button {
+  display: none;
+}
+
+#fullscreen:fullscreen {
+  padding: 42px;
+  background-color: pink;
+  border: 2px solid #f00;
+  font-size: 200%;
+}
+
+#fullscreen:fullscreen>h1 {
+  color: red;
+}
+
+#fullscreen:fullscreen>p {
+  color: darkred;
+}
+
+#fullscreen:fullscreen>button {
+  display: none;
+}
+
+div {
+  text-align: center;
 }
