@@ -6,16 +6,39 @@
 p {
   font-weight: 900;
 }
+
 p.ty {
-  margin: auto;
-  text-align: center
+
+  text-align: center;
+  position: relative;
+  top: -35px;
+  margin-bottom: -21px;
+  font-size: 30px;
+  font-family: Apple Chancery, cursive;
+
 }
+
 p.think {
   text-shadow: 4px 4px blueviolet;
 }
 
 a {
   text-decoration: none;
+}
+
+a.git {
+  box-shadow: inset 0 -0.07em 0 var(--articlePrimaryColor, #76bf80);
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+a.hob {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 html {
@@ -35,6 +58,7 @@ section.cat {
   background-size: cover;
   position: relative;
   top: 0px;
+  margin-top: 55px;
 }
 
 a:hover, a:focus {
@@ -64,7 +88,7 @@ section p+p {
 
 section.bio {
   position: relative;
-  font-size: 30px;
+  font-size: 35px;
   font-family: monospace;
   margin: 35px;
   text-align: center;
@@ -80,6 +104,19 @@ i.fa.fa-info.fa-2x.pos {
 
 h1.fav {
   color: black;
+}
+section.hobbies a {
+  display: inline;
+  margin: 85px;
+  color: green;
+
+
+
+}
+section.hobbies {
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 85px;
 }
 
 .main-menu li:hover>a {
@@ -146,6 +183,7 @@ h1.fav {
   vertical-align: middle;
   width: 190px;
   left: 50px;
+
 }
 
 .main-menu>ul.logout {
@@ -156,4 +194,62 @@ h1.fav {
 
 ::selection {
   background-color: darkorchid;
+}
+
+
+.bubbles {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%
+  z-index: 1;
+  transform: translateZ(0);
+
+
+}
+.bubbles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.15)
+  bottom: -100px;
+  animation: square 20s infinite;
+  transition-timing-function: linear;
+}
+
+.bubbles li:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+
+}
+.bubbles li:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-delay: 2s;
+  animation-duration: 17s;
+}
+.bubbles li:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-delay: 4s;
+  animation-duration: 13s;
+}.bubbles li:nth-child(4) {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 22s;
+}
+@@keyframes square {
+    0%{
+      -webkit-transform: translateY(0);
+    }
+    100%{
+      transform: translateY(0) rotate(630deg);
+    }
+
 }
