@@ -302,8 +302,8 @@ button#fullscreen-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 565px;
-  margin-top: 211px;
+  width: 665px;
+  margin-top: 237px;
   border-radius: 33%;
 }
 
@@ -317,20 +317,20 @@ img {
 
 img.jordan {
   position: absolute;
-  width: 296px;
-  height: 197px;
-  top: 6px;
-  left: 0px;
+  width: 326px;
+  height: 227px;
+  top: 26px;
+  left: 30px;
   border-radius: 25px;
   transform: rotate(-20deg);
 }
 
 img.sam {
-  width: 235px;
-  height: 196px;
+  width: 265px;
+  height: 216px;
   position: absolute;
   top: 8px;
-  left: 192px;
+  left: 292px;
   border-radius: 16px;
   transform: rotate(10deg);
 }
@@ -387,10 +387,10 @@ img.paul {
 
 img.steven {
   width: 270px;
-  height: 243px;
+  height: 273px;
   position: absolute;
-  top: 201px;
-  left: 45px;
+  top: 280px;
+  left: 60px;
   border-radius: 38px;
   transform: rotate(12deg);
 }
@@ -398,9 +398,9 @@ img.steven {
 
 img.rich {
   width: 255px;
-  height: 224px;
+  height: 274px;
   position: absolute;
-  top: 451px;
+  top: 574px;
   left: 45px;
   border-radius: 38px;
   transform: rotate(-12deg);
@@ -408,10 +408,11 @@ img.rich {
 
 img.dan {
   width: 255px;
-  height: 244px;
+  height: 264px;
   position: absolute;
-  top: 701px;
-  left: 45px;
+  top: 786px;
+  left: 185px;
   border-radius: 38px;
   transform: rotate(12deg);
+
 }
