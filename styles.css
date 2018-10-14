@@ -112,15 +112,6 @@ section.hobbies {
   margin-bottom: 85px;
 }
 
-.joe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px;
-  margin-top: 40px;
-  border-radius: 33%;
-}
-
 /* Nav */
 nav ul, nav li {
   outline: 0;
@@ -306,6 +297,56 @@ button#fullscreen-button {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+/* collage page styles */
+.joe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 565px;
+  margin-top: 40px;
+  border-radius: 33%;
+}
+
+
 div {
   text-align: center;
+}
+
+img.jordan {
+  position: absolute;
+  width: 200px;
+  height: 123px;
+  top: 0px;
+  left: 0px;
+  border-radius: 25px;
+transform: rotate(-20deg);
+
+}
+img.sam {
+  width: 185px;
+height: 146px;
+position: absolute;
+top: 8px;
+left: 192px;
+border-radius: 16px;
+transform: rotate(10deg);
+}
+img.elon {
+  width: 185px;
+height: 146px;
+position: absolute;
+top: 6px;
+left: 347px;
+border-radius: 44px;
+transform: rotate(-12deg);
+}
+img.jon {
+  width: 185px;
+height: 146px;
+position: absolute;
+top: 6px;
+left: 492px;
+border-radius: 44px;
+transform: rotate(12deg);
+
 }
