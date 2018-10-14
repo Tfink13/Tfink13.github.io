@@ -299,12 +299,14 @@ button#fullscreen-button {
 
 /* collage page styles */
 .joe {
+  position: absolute;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 665px;
-  margin-top: 237px;
+  width: 692px;
+  margin-top: 101px;
   border-radius: 33%;
+  left: 181px;
 }
 
 div {
@@ -320,69 +322,69 @@ img.jordan {
   width: 326px;
   height: 227px;
   top: 26px;
-  left: 30px;
+  left: 70px;
   border-radius: 25px;
   transform: rotate(-20deg);
 }
 
 img.sam {
-  width: 265px;
-  height: 216px;
+  width: 285px;
+  height: 226px;
   position: absolute;
-  top: 8px;
-  left: 292px;
+  top: 0px;
+  left: 422px;
   border-radius: 16px;
   transform: rotate(10deg);
 }
 
 img.elon {
-  width: 225px;
-  height: 196px;
+  width: 245px;
+  height: 256px;
   position: absolute;
-  top: 6px;
-  left: 347px;
+  top: 796px;
+  left: 737px;
   border-radius: 20px;
-  transform: rotate(-12deg);
+  transform: rotate(8deg);
 }
 
 img.jon {
-  width: 255px;
-  height: 196px;
+  width: 285px;
+  height: 246px;
   position: absolute;
-  top: 6px;
-  left: 529px;
+  top: 287px;
+  left: 1091px;
   border-radius: 36px;
-  transform: rotate(12deg);
+  transform: rotate(-12deg);
 }
 
 img.dog {
-  width: 245px;
-  height: 186px;
+  width: 267px;
+  height: 226px;
   position: absolute;
-  top: 6px;
-  left: 750px;
+  top: 558px;
+  left: 1110px;
   border-radius: 30px;
-  transform: rotate(-12deg);
-}
-
-img.cam {
-  width: 255px;
-  height: 206px;
-  position: absolute;
-  top: 6px;
-  left: 992px;
-  border-radius: 38px;
   transform: rotate(12deg);
 }
 
-img.paul {
-  width: 255px;
-  height: 226px;
+img.cam {
+  width: 275px;
+  height: 236px;
   position: absolute;
-  top: -9px;
-  left: 1184px;
+  top: 786px;
+  left: 992px;
   border-radius: 38px;
   transform: rotate(-12deg);
+}
+
+img.paul {
+  width: 254px;
+  height: 246px;
+  position: absolute;
+  left: 474px;
+  border-radius: 38px;
+  transform: rotate(-12deg);
+  top: 780px;
 }
 
 img.steven {
@@ -395,12 +397,11 @@ img.steven {
   transform: rotate(12deg);
 }
 
-
 img.rich {
   width: 255px;
   height: 274px;
   position: absolute;
-  top: 574px;
+  top: 548px;
   left: 45px;
   border-radius: 38px;
   transform: rotate(-12deg);
@@ -412,6 +413,24 @@ img.dan {
   position: absolute;
   top: 786px;
   left: 185px;
+  border-radius: 38px;
+  transform: rotate(12deg);
+}
+img.ronda {
+  width: 273px;
+  height: 233px;
+  position: absolute;
+  top: 2px;
+  left: 705px;
+  border-radius: 38px;
+  transform: rotate(-12deg);
+}
+img.kraus {
+  width: 273px;
+  height: 263px;
+  position: absolute;
+  top: 18px;
+  left: 990px;
   border-radius: 38px;
   transform: rotate(12deg);
 
