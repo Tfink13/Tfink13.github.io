@@ -112,6 +112,15 @@ section.hobbies {
   margin-bottom: 85px;
 }
 
+.joe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  margin-top: 40px;
+  border-radius: 33%;
+}
+
 /* Nav */
 nav ul, nav li {
   outline: 0;
@@ -144,8 +153,6 @@ nav ul, nav li {
 }
 
 .main-menu li {
-  position: relative;
-  display: block;
   width: 250px;
 }
 
@@ -296,8 +303,7 @@ button#fullscreen-button {
   box-shadow: 2px 2px 9px black;
   border-radius: 50%;
   opacity: .9;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 div {
