@@ -26,26 +26,26 @@
         <button class="button" id="fullscreen-button">Tyler Fink</button>
       </div>
 
-        <script>
-          var fullscreenButton = document.getElementById("fullscreen-button");
-          var fullscreenDiv = document.getElementById("fullscreen");
-          var fullscreenFunc = fullscreenDiv.requestFullscreen;
+      <script>
+        var fullscreenButton = document.getElementById("fullscreen-button");
+        var fullscreenDiv = document.getElementById("fullscreen");
+        var fullscreenFunc = fullscreenDiv.requestFullscreen;
 
-          if (!fullscreenFunc) {
-            ['mozRequestFullScreen',
-              'msRequestFullscreen',
-              'webkitRequestFullScreen'
-            ].forEach(function(req) {
-              fullscreenFunc = fullscreenFunc || fullscreenDiv[req];
-            });
-          }
+        if (!fullscreenFunc) {
+          ['mozRequestFullScreen',
+            'msRequestFullscreen',
+            'webkitRequestFullScreen'
+          ].forEach(function(req) {
+            fullscreenFunc = fullscreenFunc || fullscreenDiv[req];
+          });
+        }
 
-          function enterFullscreen() {
-            fullscreenFunc.call(fullscreenDiv);
-          }
+        function enterFullscreen() {
+          fullscreenFunc.call(fullscreenDiv);
+        }
 
-          fullscreenButton.addEventListener('click', enterFullscreen);
-        </script>
+        fullscreenButton.addEventListener('click', enterFullscreen);
+      </script>
       <p class="ty"></p>
       <p class="think">"Think big and dont listen to people who tell you it can't be done. Life's too short to think small."</p>
 
@@ -142,33 +142,28 @@
 
   <section class="bio">
     <p>Hello! I am an entry level developer, I attend college at Thaddeus Stevens College of Technology. I have basic web developement skills with html5 and css, I am also skilled with using some basic commands while using the command line. My
-      projects have all been successfully uploaded to github, please take a look!</p><a class="git" href="https://github.com/Tfink13?tab=repositories">Tylers GitHub Projects</a>
-
-  </section>
-  <section class="hobbies">
-    <a class="hob" href="#">Travel</a>
-    <a class="hob" href="#">Skateboard</a>
-    <a class="hob" href="#">Video Games</a>
-    <a class="hob" href="#">Apeciation of Art</a>
-  </section>
-
-
-
-  <!-- attempt at making animation background-->
-
-  <ul class="bubbles">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
+      projects have all been successfully uploaded to github, please take a look!</p><a class="git" href="https://github.com/Tfink13?tab=repositories"><i class="fa fa-github" aria-hidden="true"></i>Tylers GitHub Projects<i class="fa fa-github"
+        aria-hidden="true"></i></a>
 
 
 
 
-  <footer>
-    Copyright © 2018 - TFINK Websites
-  </footer>
+
+    <!-- attempt at making animation background-->
+
+    <ul class="bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+
+
+
+    <footer>
+      Copyright © 2018 - TFINK Websites
+    </footer>
 
 
 </body>

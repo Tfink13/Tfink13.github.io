@@ -1,6 +1,6 @@
 /* Add your CSS here */
 html {
-  background: darkcyan;
+    background-image: radial-gradient(circle, red, yellow, green);
 }
 
 * {
@@ -42,6 +42,8 @@ a.git {
   box-shadow: inset 0 -0.07em 0 var(--articlePrimaryColor, palegreen);
   border-bottom: 6px double;
   line-height: 2.9em;
+  background: palegreen;
+  border-radius: 10px;
 }
 
 a.hob {
@@ -114,7 +116,6 @@ section.hobbies {
 
 /* Nav */
 nav ul, nav li {
-  outline: 0;
   margin: 0;
   padding: 0;
 }
@@ -204,6 +205,10 @@ i.fas.fa-film.fa.fa-2x {
   right: 3px;
 }
 
+.fa-github {
+  color: black;
+}
+
 /* style to change the color of highlighter */
 ::selection {
   background-color: darkorchid;
@@ -273,6 +278,7 @@ footer {
   }
 }
 
+/* fullscreen java fullscreenButton */
 #fullscreen:-webkit-full-screen {
   padding: 42px;
   background-color: pink;
@@ -416,6 +422,7 @@ img.dan {
   border-radius: 38px;
   transform: rotate(12deg);
 }
+
 img.ronda {
   width: 273px;
   height: 233px;
@@ -425,6 +432,7 @@ img.ronda {
   border-radius: 38px;
   transform: rotate(-12deg);
 }
+
 img.kraus {
   width: 273px;
   height: 263px;
@@ -433,5 +441,10 @@ img.kraus {
   left: 990px;
   border-radius: 38px;
   transform: rotate(12deg);
+}
 
+div.cog {
+  top: 253px;
+  position: relative;
+  left: 20px;
 }
