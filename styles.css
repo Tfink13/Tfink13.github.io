@@ -293,6 +293,9 @@ footer {
   border: 5px solid linear-gradient();
   font-size: 200%;
 }
+#fullscreen-button {
+      outline: none;
+}
 
 button#fullscreen-button {
   position: relative;
