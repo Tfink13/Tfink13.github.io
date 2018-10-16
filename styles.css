@@ -298,7 +298,7 @@ button#fullscreen-button {
   position: relative;
   top: -35px;
   background-color: #4CAF50;
-  border: none;
+  border: 5px dashed palegreen;
   color: white;
   padding: 20px;
   text-align: center;
