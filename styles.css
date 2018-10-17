@@ -211,15 +211,16 @@ i.fas.fa-film.fa.fa-2x {
   color: black;
 }
 
-/* style to change the color of highlighter */
-::selection {
-  background-color: darkorchid;
-}
-
 .fa-spin {
   animation: fa-spin 2s infinite linear;
   position: absolute;
   right: 575px;
+}
+
+/* style to change the color of highlighter */
+
+::selection {
+  background-color: darkorchid;
 }
 
 /* style footer */
@@ -293,8 +294,9 @@ footer {
   border: 5px solid linear-gradient();
   font-size: 200%;
 }
+
 #fullscreen-button {
-      outline: none;
+  outline: none;
 }
 
 button#fullscreen-button {
